@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-image:linear-gradient(90deg, #4169E1,#191970) ;
+    color: white;
+    line-height: 1;
+}
+body a{
+    color: white;
+    text-decoration: none;
+}
+body a:hover{
+    color: #87CEEB;
+    text-decoration: underline;
+}
+.container{
+    padding: 0px 10px;
+    overflow: hidden;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding-top: 10px;
+}
+#mainhead h1{
+    font-size: 60px ;
+    padding: 30px 60px;
+}
+#navbar{
+    font-size: 23px;
+    background-image:linear-gradient(to left, #4169E1,#191970) ;
+    border-top: 2px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+#navbar ul{
+    text-align: right;
+    padding-right: 0px;
+}
+#navbar li{
+    display: inline-block;
+    padding: 10px 30px;
+    border-left: 2px solid rgba(255, 255, 255, 0.7);
+}
+#showcase{
+    height: 650px;
+    text-align: center;
+    background-image: url('ardd.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(50%);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    line-height: 1.5em;
+}
+.backgrnd{
+    width: 70%;
+    display: inline-block;
+    font-size: 30px;
+    background-color: rgba(33, 123, 240, 0.808);
+    height: 650px;
+}
+#showcase h2{
+    padding-top: 20px;
+}
+#showcase p{
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.back{
+    font-size: 30px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.568);
+    margin-top: 150px;
+    float: left;
+    width: 45%;
+    border-radius: 1em;
+    padding-bottom: 15px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+.back1{
+    font-size: 30px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.568);
+    margin-top: 150px;
+    float: right;
+    width: 45%;
+    border-radius: 1em;
+    padding-bottom: 15px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+button{
+    color: rgb(14, 14, 175);
+    font-weight: 500;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.377);
+    padding: 10px;
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+}
+button a:hover{
+    text-decoration: none;
+    color:rgb(14, 14, 175) ;
+}
+#achiv{
+    text-align: center;
+    flex-basis: 60%;
+    padding: 20px;
+    margin: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 1em;
+    flex-wrap: wrap;
+}
+#events{
+    text-align: center;
+    flex-basis: 40%;
+    padding: 20px;
+    margin: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 1em;
+    flex-wrap: wrap;
+}
+.flex li{
+    list-style: none;
+}
+.flex h2{
+    padding-bottom: 15px;
+}
+#back2{
+    background-color: midnightblue;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+#contact{
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid rgba(255, 255, 255, 0.7);
+}
+#contact h2{
+    padding-bottom: 10px;
+    font-size: 28px;
+}
+#contact li{
+    display: inline-block;
+    padding-right: 20px;
+}
+#footer{
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid rgba(255, 255, 255, 0.7) ;
+}
+
+@media(max-width:1000px){
+    .logo{
+        width: 70px;
+        height: 70px;
+    }
+    #mainhead h1{
+        font-size: 1.2em;
+    }
+    #navbar li{
+        font-size: 15px;
+        float: center;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #showcase{
+        height: 900px;
+    }
+    .backgrnd{
+        height: 900px;
+    }
+    
+}
+@media(max-width:700px){
+    #showcase{
+        height: 800px;
+    }
+    .backgrnd{
+        height: 800px;
+    }
+    #showcase h2{
+        font-size: 30px;
+    }
+    #showcase p, button{
+        font-size: 20px;
+    }
+    .back, .back1{
+        margin-top: 40px;
+    }
+}
+@media(min-width:700px){
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.4em;
+    }
+}
